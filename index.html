@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Bootswatch-->
+    <link rel="stylesheet" href="./bootstrap.min.css">
+    <link rel="stylesheet" href="./_bootswatch.scss">
+    <link rel="stylesheet" href="./_variables.scss">
+    <!--Fontawesome-->
+    <script src="https://kit.fontawesome.com/0c3810a62a.js" crossorigin="anonymous"></script>
+    <!--Style from SASS-->
+    <link rel="stylesheet" href="style.css">
+    <title>Página Modelo</title>
+</head>
+<body>
+<!--Navbar-->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Site Modelo <i class="far fa-thumbs-up"></i></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+      
+          <div class="collapse navbar-collapse" id="navbarColor01">
+            <ul class="navbar-nav me-auto">
+              <li class="nav-item">
+                <a class="nav-link active" href="#">Início
+                  <span class="visually-hidden">(current)</span>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Institucional</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Quem somos</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Comunicação</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Utilidades</a>
+                <div class="dropdown-menu">
+                  <a class="dropdown-item" href="#">Fotos</a>
+                  <a class="dropdown-item" href="#">Agenda</a>
+                  <a class="dropdown-item" href="#">Documentos</a>
+                  <div class="dropdown-divider"></div>
+                  <a class="dropdown-item" href="#">Fale Conosco</a>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+    </nav>
+<main>
+<!--Carrousel-->
+<div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <div class="carrosel-img carrosel-img-1"></div>
+
+        <div class="container">
+          <div class="carousel-caption text-start">
+            <h1>Exemplo de Título</h1>
+            <p>Frase chamativa para o link abaixo</p>
+            <p><a class="btn btn-lg btn-primary" href="#">Saiba Mais</a></p>
+          </div>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <div class="carrosel-img carrosel-img-2"></div>
+
+        <div class="container">
+          <div class="carousel-caption text-end">
+            <h1>Outro Exemplo de Título</h1>
+            <p>Outra frase chamativa para o link abaixo</p>
+            <p><a class="btn btn-lg btn-primary" href="#">Saiba Mais</a></p>
+          </div>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <div class="carrosel-img carrosel-img-3"></div>
+
+        <div class="container">
+          <div class="carousel-caption text-center">
+            <h1>Mais um Exemplo de Título</h1>
+            <p>Mais outra frase chamativa para o link abaixo</p>
+            <p><a class="btn btn-lg btn-primary" href="#">Saiba Mais</a></p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+
+<!--Cards-->
+
+<div class="container py-4">
+
+    <div class="row align-items-md-stretch">
+      <div class="col-md-6">
+        <div class="h-100 p-5 text-dark bg-light rounded-3">
+          <h2>Artigo 1</h2>
+          <p>Resumo chamativo para o texto da próxma página, caso queira ler o texto completo, clique no botão abaixo:</p>
+          <button class="btn btn-outline-light" type="button">Ler mais</button>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="h-100 p-5 text-dark bg-light border rounded-3">
+          <h2>Artigo 2</h2>
+          <p>Resumo chamativo para o texto da próxma página, caso queira ler o texto completo, clique no botão abaixo:</p>
+          <button class="btn btn-outline-light btn" type="button">Ler mais</button>
+        </div>
+      </div>
+    </div>
+</div>
+
+</main>
+
+<footer class="text-muted py-5">
+    <div class="container">
+      <p class="float-end mb-1">
+        <a href="#">Back to top</a>
+      </p>
+      <p class="mb-1">Feito por &copy; Jeff Lucas | Problemas técnicos <a href="/">Entre em contato.</a></p>
+    </div>
+  </footer>
+</body>
+<!--Bootswatch-->
+<script src="./bootstrap.min.js"></script>
+</html>
